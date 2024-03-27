@@ -1,3 +1,5 @@
+// StudentForm.js
+
 import React, { useState } from 'react';
 
 function StudentForm() {
@@ -17,43 +19,68 @@ function StudentForm() {
     setStudentPhone('');
   };
 
+  const inputStyle = {
+    width: '100%',
+    padding: '8px',
+    border: '1px solid #ccc',
+    borderRadius: '3px',
+  };
+
+  const submitButtonStyle = {
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '3px',
+    cursor: 'pointer',
+  };
+
   return (
-    <div>
+    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
       <h2>Student Information Form</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="studentName">Hello Adios! Student Name:</label>
-        <input
-          type="text"
-          id="studentName"
-          value={studentName}
-          onChange={(e) => setStudentName(e.target.value)}
-          required
-        />
+        <div style={{ marginBottom: '20px' }}>
+          <label htmlFor="studentName">Student Name:</label>
+          <input
+            type="text"
+            id="studentName"
+            value={studentName}
+            onChange={(e) => setStudentName(e.target.value)}
+            style={inputStyle}
+            required
+          />
+        </div>
 
-        <label htmlFor="studentEmail">Student Email:</label>
-        <input
-          type="text"
-          id="studentEmail"
-          value={studentEmail}
-          onChange={(e) => setStudentEmail(e.target.value)}
-          required
-        />
+        <div style={{ marginBottom: '20px' }}>
+          <label htmlFor="studentEmail">Student Email:</label>
+          <input
+            type="text"
+            id="studentEmail"
+            value={studentEmail}
+            onChange={(e) => setStudentEmail(e.target.value)}
+            style={inputStyle}
+            required
+          />
+        </div>
 
-        <label htmlFor="studentPhone">Student Phone:</label>
-        <input
-          type="text"
-          id="studentPhone"
-          value={studentPhone}
-          onChange={(e) => setStudentPhone(e.target.value)}
-          required
-        />
+        <div style={{ marginBottom: '20px' }}>
+          <label htmlFor="studentPhone">Student Phone:</label>
+          <input
+            type="text"
+            id="studentPhone"
+            value={studentPhone}
+            onChange={(e) => setStudentPhone(e.target.value)}
+            style={inputStyle}
+            required
+          />
+        </div>
 
-        <input type="submit" value="Submit" />
+        <div style={{ marginBottom: '20px' }}>
+          <input type="submit" value="Submit" style={submitButtonStyle} />
+        </div>
       </form>
     </div>
   );
 }
 
 export default StudentForm;
-
-//hello
