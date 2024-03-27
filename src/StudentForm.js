@@ -40,7 +40,7 @@ function StudentForm() {
       <h2>Student Information Form</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '20px' }}>
-          <label htmlFor="studentName">Student Name:</label>
+          <label htmlFor="studentName">1. Student Name:</label>
           <input
             type="text"
             id="studentName"
@@ -52,7 +52,7 @@ function StudentForm() {
         </div>
 
         <div style={{ marginBottom: '20px' }}>
-          <label htmlFor="studentEmail">Student Email:</label>
+          <label htmlFor="studentEmail">2. Student Email:</label>
           <input
             type="text"
             id="studentEmail"
@@ -64,7 +64,7 @@ function StudentForm() {
         </div>
 
         <div style={{ marginBottom: '20px' }}>
-          <label htmlFor="studentPhone">Student Phone:</label>
+          <label htmlFor="studentPhone">3. Student Phone:</label>
           <input
             type="text"
             id="studentPhone"
