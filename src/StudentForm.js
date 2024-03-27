@@ -21,7 +21,7 @@ function StudentForm() {
     <div>
       <h2>Student Information Form</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="studentName">Hello Adios Student Name:</label>
+        <label htmlFor="studentName">Hello Adios! Student Name:</label>
         <input
           type="text"
           id="studentName"
